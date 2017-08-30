@@ -1,0 +1,49 @@
+This library is pre-built by MediaTek internally.
+
+
+WHAT IT DOES?
+============
+spir2cl is a project based on open source project llvm-cbe.
+
+We modify llvm-cbe to tranforming SPIR 1.2 to OpenCL C 1.2.
+
+llvm-cbe
+--------
+
+resurrected LLVM "C Backend", with improvements
+https://github.com/draperlaboratory/llvm-cbe
+
+HOW IT WAS BUILT?
+==================
+It needs the following library from AOSP:
+
+  libLLVMIRReader
+  libLLVMLinker
+  libLLVMIRReader
+  libLLVMAsmParser
+  libLLVMAsmPrinter
+  libLLVMBitWriter
+  libLLVMInstrumentation
+  libLLVMObject
+  libLLVMSelectionDAG
+  libLLVMCodeGen
+  libLLVMScalarOpts
+  libLLVMTransformUtils
+  libLLVMDebugInfoDWARF
+  libLLVMDebugInfoPDB
+  libLLVMAnalysis
+  libLLVMTarget
+  libLLVMMCParser
+  libLLVMBitReader
+  libLLVMMC
+  libLLVMCore
+  libLLVMSupport
+  libcutils
+  libdl
+
+and the following libs from MediaTek:
+  libspir2cl
+
+HOW TO USE IT?
+==============
+Run the executable binary

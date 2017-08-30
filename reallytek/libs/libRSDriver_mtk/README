@@ -1,0 +1,21 @@
+This module creates the MediaTek RenderScript driver: libRSDriver_mtk
+
+This library is pre-built by MediaTek internally.
+
+WHAT IT DOES?
+=============
+libRSDriver_mtk is a MediaTek RenderScript driver which speedup RenderScript apps execution.
+
+HOW IT WAS BUILT?
+==================
+It needs the following library from AOSP:
+
+libRS libRS_internal libcrypto liblog libcutils libutils libEGL libGLESv1_CM libGLESv2 libui libgui libsync libbcc libbcinfo libLLVM libc++ libblas libz
+
+and the following libs from MediaTek:
+
+libRSCL libRSCpuRef_mtk libOpenCLIcd
+
+HOW TO USE IT?
+==============
+Call the exported API for use.

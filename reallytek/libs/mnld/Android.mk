@@ -1,0 +1,14 @@
+LOCAL_PATH := $(call my-dir)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE = mnld
+LOCAL_MODULE_CLASS = EXECUTABLES
+LOCAL_MODULE_OWNER = mtk
+LOCAL_MODULE_PATH = $(PRODUCT_OUT)/system/vendor/bin
+LOCAL_PROPRIETARY_MODULE = true
+LOCAL_MODULE_TAGS = optional
+LOCAL_REQUIRED_MODULES = libmnl.so
+LOCAL_SHARED_LIBRARIES = libmnl libcurl libnvram libcrypto libssl libz libc++
+LOCAL_MULTILIB = 32
+LOCAL_SRC_FILES_32 = arm/mnld
+include $(BUILD_PREBUILT)

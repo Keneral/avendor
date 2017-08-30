@@ -1,0 +1,17 @@
+This library is pre-built by MediaTek internally.
+
+
+WHAT IT DOES?
+=============
+libopencl_icd is a project based on Khronos OpenCL-ICD-Loader project,
+which load speicified opencl driver in execution.
+
+HOW IT WAS BUILT?
+==================
+It needs the following library from AOSP:
+
+libdl liblog
+
+HOW TO USE IT?
+==============
+Call the exported API for use.

@@ -1,0 +1,43 @@
+This library is pre-built by MediaTek internally.
+
+
+WHAT IT DOES?
+=============
+rs2spir transfer RenderScript bitcode to SPIR 1.2
+
+HOW IT WAS BUILT?
+==================
+It needs the following library from AOSP:
+
+  libcrypto_static
+  libLLVMLinker
+  libLLVMipo
+  libLLVMVectorize
+  libLLVMBitWriter_3_2_rsdrv
+  libLLVMInstrumentation
+  libLLVMIRReader
+  libLLVMAsmParser
+  libLLVMSelectionDAG
+  libLLVMAsmPrinter
+  libLLVMDebugInfoDWARF
+  libLLVMDebugInfoPDB
+  libLLVMCodeGen
+  libLLVMScalarOpts
+  libLLVMInstCombine
+  libLLVMTransformUtils
+  libLLVMAnalysis
+  libLLVMTarget
+  libLLVMObject
+  libLLVMBitReader
+  libLLVMMC
+  libLLVMMCParser
+  libLLVMCore
+  libLLVMSupport
+
+and the following libs from MediaTek:
+
+librs2spir
+
+HOW TO USE IT?
+==============
+Run the executable binary

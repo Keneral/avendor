@@ -1,0 +1,23 @@
+LOCAL_PATH := $(call my-dir)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE = libcam_platform
+LOCAL_MODULE_CLASS = SHARED_LIBRARIES
+LOCAL_MODULE_OWNER = mtk
+LOCAL_MODULE_SUFFIX = .so
+LOCAL_PROPRIETARY_MODULE = true
+LOCAL_SHARED_LIBRARIES_64 = libcamdrv libcam.device1 libcam.device3 libc++
+LOCAL_MULTILIB = 64
+LOCAL_SRC_FILES_64 = arm64/libcam_platform.so
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE = libcam_platform
+LOCAL_MODULE_CLASS = SHARED_LIBRARIES
+LOCAL_MODULE_OWNER = mtk
+LOCAL_MODULE_SUFFIX = .so
+LOCAL_PROPRIETARY_MODULE = true
+LOCAL_SHARED_LIBRARIES = libcamdrv libcam.device1 libcam.device3 libc++
+LOCAL_MULTILIB = 32
+LOCAL_SRC_FILES_32 = arm/libcam_platform.so
+include $(BUILD_PREBUILT)

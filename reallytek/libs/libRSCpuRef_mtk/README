@@ -1,0 +1,18 @@
+This library is pre-built by MediaTek internally.
+
+
+WHAT IT DOES?
+=============
+cpu_ref is a project based on Android open source project.
+We modify cpu_ref to construct MediaTek RenderScript driver.
+
+HOW IT WAS BUILT?
+==================
+It needs the following library from AOSP:
+
+libRS libcutils libutils liblog libsync libc++ libdl libz libbcc libbcinfo libblas
+
+HOW TO USE IT?
+==============
+
+Call the exported API for use.
