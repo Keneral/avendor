@@ -1,0 +1,2 @@
+reallytek/libs/rs2spir/arm64/rs2spir filter=lfs diff=lfs merge=lfs -text
+reallytek/libs/rs2spir/x86_64/rs2spir filter=lfs diff=lfs merge=lfs -text
